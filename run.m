@@ -1,12 +1,18 @@
-
-
-
-m = 10;
-l = 2;
+% Model params
+M_e = 5;
+M_h = 10;
+l = 1;
 g = 9.81;
-Kp = 300;
-Kd = 300;
 
-Kp_imped = 10000;
-Kd_imped = 10000;
+%Impedamce model
+K = 10000;
+D = 10000;
 
+%Exo Gains
+Kp_e = 300;
+Kd_e = 300;
+
+
+%human Gains
+Kp_h = 300;
+Kd_h = 300;
