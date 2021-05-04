@@ -19,8 +19,8 @@ Km2 = 30;
 Dm2 = 30;
 
 % Addmittance Controller
-Kd = 20;
-Bd = 20;
+Kd = 10;
+Bd = 10;
 Md = 10;
 alpha = 10;
 beta = 10;
@@ -35,6 +35,10 @@ rho = .50;
 lambda2 = 0.005;
 rho2 = .001;
 
+% 
+lambda2 = 0.001*1000;
+rho2 = .008*100;
 
-% lambda2 = 0.001*1000;
-% rho2 = .008*100;
+
+lambda2 = 0.001*1000;
+rho2 = .05*100;
