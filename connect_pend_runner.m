@@ -6,8 +6,8 @@ l2 = l1;
 g = -9.81;
 
 % connection dyamics
-spring = 300;
-dampener = 300;
+spring = 100;
+dampener = 100;
 
 
 % model 1 gains
@@ -19,8 +19,8 @@ Km2 = 30;
 Dm2 = 30;
 
 % Addmittance Controller
-Kd = 10;
-Bd = 10;
+Kd = 50;
+Bd = 50;
 Md = 10;
 alpha = 10;
 beta = 10;
@@ -40,5 +40,9 @@ lambda2 = 0.001*1000;
 rho2 = .008*100;
 
 
-lambda2 = 0.001*1000;
+lambda2 = 1;
 rho2 = .05*100;
+
+
+lambda2 = 2.8;
+rho2 = 4.5;
