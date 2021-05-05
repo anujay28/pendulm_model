@@ -8,54 +8,35 @@
 
 
 % human parameters
-mh1 = 2.0;
-mh2 = 1.0;
 
-% exo params
-me1 = mh1 + 2.0;
-me2 = mh2 + 1.0;
+mh = [2, 1]; 
+
+me = [ 2, 1] + mh;
 
 % other model params
-l1 = 1.0;
-l2 = 1.5;
+l = [ 1.0, 1.5]
+
 g = -9.81;
 
 
 % connection dyamics
 spring = [100, 0; 0, 100];
-dampener = [50, 0; 0, 50];
+dampener = [100, 0; 0, 100];
 
 
 % model 1 gains
 Km1 = [30, 0; 0 30];
-Dm1 = [5,0;0,5];
+Dm1 = [30,0;0,30];
 
 
 
 % Addmittance Controller
-Kd = 50;
-Bd = 50;
-Md = 10;
+Kd = [50,0;0,50];
+Bd = [50,0;0,50];
+Md = [10, 0; 0, 10];
 
 
 % SMC
 
-% SMC
-lambda = 50.0;
-rho = .50;
-
-
-lambda2 = 0.005;
-rho2 = .001;
-
-% 
-lambda2 = 0.001*1000;
-rho2 = .008*100;
-
-
-lambda2 = 1;
-rho2 = .05*100;
-
-
-lambda2 = 2.8;
-rho2 = 4.5;
+lambda2 = [2.8, 0; 0 2.8];
+rho2 = [4.5, 0; 0, 4.5];
