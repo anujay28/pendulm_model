@@ -20,8 +20,8 @@ g = -9.81;
 
 
 % connection dyamics
-spring = [100, 0; 0, 100];
-dampener = [100, 0; 0, 100];
+spring = [500, 0; 0, 10];
+dampener = [500, 0; 0, 10];
 
 
 % model 1 gains
