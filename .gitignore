@@ -16,3 +16,5 @@ slprj/_sfprj/EMLReport/
 slprj/sim/varcache/double_pend/
 
 *.original
+
+*.slxc
