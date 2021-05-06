@@ -1,0 +1,16 @@
+
+slprj/_jitprj/
+
+*.m~
+
+slprj/_sfprj/double_pend/_self/sfun/info/
+
+slprj/_sfprj/precompile/
+
+*.autosave
+
+slprj/_sfprj/double_pend/
+
+slprj/_sfprj/EMLReport/
+
+slprj/sim/varcache/double_pend/
