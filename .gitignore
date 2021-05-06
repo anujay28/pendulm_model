@@ -14,3 +14,5 @@ slprj/_sfprj/double_pend/
 slprj/_sfprj/EMLReport/
 
 slprj/sim/varcache/double_pend/
+
+*.original

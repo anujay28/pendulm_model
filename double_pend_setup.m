@@ -16,12 +16,12 @@ me = [ 2, 1] + mh;
 % other model params
 l = [ 1.0, 1.5]
 
-g = -9.81;
+
 
 
 % connection dyamics
-spring = [500, 0; 0, 10];
-dampener = [500, 0; 0, 10];
+spring = [50, 0; 0, 50];
+dampener = [50, 0; 0, 50];
 
 
 % model 1 gains
@@ -31,12 +31,12 @@ Dm1 = [30,0;0,30];
 
 
 % Addmittance Controller
-Kd = [50,0;0,50];
-Bd = [50,0;0,50];
-Md = [10, 0; 0, 10];
+Kd = [30,0;0,30];
+Bd = [30,0;0,30];
+Md = [10, 0; 0, 20];
 
 
 % SMC
 
-lambda2 = [2.8, 0; 0 2.8];
-rho2 = [4.5, 0; 0, 4.5];
+lambda2 = [0.75, 0; 0 5.0];
+rho2 = [15, 0; 0, 18];
