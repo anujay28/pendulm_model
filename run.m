@@ -1,7 +1,7 @@
 % Model params
 M_e = 5;
 M_h = 10;
-l = 1;
+l1 = 1;
 g = 9.81;
 
 %Impedamce model

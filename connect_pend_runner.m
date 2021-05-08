@@ -27,7 +27,11 @@ beta = 10;
 
 % SMC
 
+eblispon = 0.1;
+
+lambda2 = 3;
+rho2 = 3;
 
 
-lambda2 = 2.8;
-rho2 = 4.5;
+lambda2 = 3;
+rho2 = 15;
