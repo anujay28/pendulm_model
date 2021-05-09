@@ -24,3 +24,5 @@ slprj/sim/varcache/single_pend/
 slprj/sim/varcache/connect_pend_add/tmwinternal/simulink_cache.xml
 
 *.slxc
+
+*.xml
