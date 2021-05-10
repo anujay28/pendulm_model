@@ -11,7 +11,7 @@
 
 mh = [2, 1]; 
 
-me = [ 5, 5] + mh;
+me = [ 1, 1] + mh;
 
 % other model params
 l = [ 1.0, 1.5]
