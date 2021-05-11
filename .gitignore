@@ -28,3 +28,7 @@ slprj/sim/varcache/connect_pend_add/tmwinternal/simulink_cache.xml
 *.xml
 
 *.l
+
+*.r2020a
+
+*.asv
