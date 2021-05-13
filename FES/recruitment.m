@@ -1,10 +1,9 @@
-function [ a_r ] = recruitment(d, model)
+function [ a_r ] = recruitment(d)
 
-   
-    d_thr = model.d_thr;
-    d_sat = model.d_sat;
-    k_thr = model.k_thr;
-    k_sat = model.k_sat;
+    d_thr = 122.0;
+    d_sat = 487.0;
+    k_thr = 0.02*10^6;
+    k_sat = 0.00938*10^(6);
     max_d = 999999999;
    
 
