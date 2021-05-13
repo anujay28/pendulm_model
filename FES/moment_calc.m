@@ -5,7 +5,7 @@ function [tau] = moment_calc(force,ma)
   tau = [0;0;0];
   for ii = 1:3
       for jj = 1:9
-          tau(ii) = tau(ii) + muscle_force(jj) * ma(jj,ii)
+          tau(ii) = tau(ii) + force(jj) * ma(jj,ii)
       end
   end
 end

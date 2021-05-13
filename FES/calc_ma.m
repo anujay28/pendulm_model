@@ -1,7 +1,10 @@
 function [ma ] = calc_ma( theta)
 %MOMENTARM Summary of this function goes here
 %   Detailed explanation goes here
-    [hip, knee, ankle] = theta;
+    hip = theta(1);
+    knee = theta(2);
+    ankle = theta(3);
+    
     ma = zeros(9,3);
     ma(1,1) = 0.00233*hip^2 - 0.00223*hip - 0.0275;
     ma(2,1) = -0.0098*hip^2 - 0.0054*hip + 0.0413;

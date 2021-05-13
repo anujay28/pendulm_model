@@ -1,4 +1,4 @@
-function [outputArg1,outputArg2] = myRK4(ma, theta)
+function ma = myRK4(prev_ma, theta)
 %MYRK4 Summary of this function goes here
 %   Detailed explanation goes here
 
