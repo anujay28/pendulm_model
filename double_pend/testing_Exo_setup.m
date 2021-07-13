@@ -11,7 +11,7 @@
 
 mh = [11.824, 3.848]; 
 
-me = [ 2.11, 1.28] + mh;
+me = [ 2.11, 1.28]  + mh;
 
 % other model params
 l = [0.324, 0.3900]
@@ -37,9 +37,9 @@ Dm1 = [30,0;0,30];
 % Md = [2.0, 0; 0, 2.0];
 
 % Addmittance Controller
-Kd = [50,0;0, 50];
-Bd = [50,0;0, 50];
-Md = [10.0, 0; 0, 10.0];
+Kd = [15,0;0, 15];
+Bd = [15,0;0, 15];
+Md = [15.0, 0; 0, 15.0];
 
 
 % lambda2 = [ 1.2, 0; 0 25.0];
@@ -60,12 +60,17 @@ Md = [10.0, 0; 0, 10.0];
 % human_sat = 30;
 
 
-% Works well with the lower masses
+% %Works well with the lower masses
 % lambda2 = [1.0, 0; 0 2.3];
 % rho2 = [105, 0; 0, 350];
 % exo_sat = 2000;
 % human_sat = 30;
 
+
+lambda2 = [1.2, 0; 0 1.25];
+rho2 = [100, 0; 0, 450];
+exo_sat = 120;
+human_sat = 30;
 
 Kem = [ 50, 0; 0, 50];
 Ked = [ 50, 0; 0, 50];
