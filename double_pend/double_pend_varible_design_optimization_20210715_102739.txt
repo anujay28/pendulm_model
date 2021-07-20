@@ -1,0 +1,2 @@
+=== Design Optimization (Elapsed: 0.253 sec) ===
+    Error:Brace indexing is not supported for variables of this type.

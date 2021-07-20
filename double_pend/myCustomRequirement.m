@@ -27,11 +27,17 @@ function vals=myCustomRequirement(data)
 % function.
 %
 
-ref = data.Nominal.ref.Data
-exo = data.Nominal.exo.Data
+ref = data.Nominal.ref.Data;
+vel = data.Nominal.vel.Data;
+exo = data.Nominal.exo.Data;
+exo_vel = data.Nominal.exo.Data;
+human = data.Nominal.human.Data;
+human = reshape(human',2,1,[]); % reshape magic
 
-e = ( exo - ref).^2;
-vals = sum(e,3);
-
+e_ref = sqrt(( human - ref).^2);
+e_vel = sqrt(( vel - exo_vel).^2);
+e_human = sqrt( ( exo - ref).^2);
+joint_error = sum(e_ref,3) %+ sum(e_human,3) %+ sum(e_vel,3);
+vals = sum(joint_error);
 
 end
