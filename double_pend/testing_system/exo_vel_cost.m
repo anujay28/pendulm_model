@@ -1,7 +1,7 @@
-function vals=myCustomRequirement(data)
-%MYCUSTOMREQUIREMENT
+function vals=exo_vel_cost(data)
+%EXO_VEL_COST
 %
-% The myCustomRequirement function defines a custom requirement used in the
+% The exo_vel_cost function defines a custom requirement used in the
 % graphical SDOTOOL environment.
 
 % The |vals| return argument is the value returned to the SDOTOOL
@@ -27,17 +27,14 @@ function vals=myCustomRequirement(data)
 % function.
 %
 
-ref = data.Nominal.ref.Data;
-vel = data.Nominal.vel.Data;
-exo = data.Nominal.exo.Data;
-exo_vel = data.Nominal.exo.Data;
-human = data.Nominal.human.Data;
-human = reshape(human',2,1,[]); % reshape magic
 
-e_ref = sqrt(( human - ref).^2);
-e_vel = sqrt(( vel - exo_vel).^2);
-e_human = sqrt( ( exo - ref).^2);
-joint_error = sum(e_ref,3) + sum(e_human,3) + sum(e_vel,3);
-vals = sum(joint_error);
+ref = data.Nominal.vel.Data;
+exo = data.Nominal.exo_vel.Data;
+
+e = ( exo - ref).^2;
+
+joint_error = sum(e,3)/length(e);
+
+vals = sum(sqrt(joint_error));
 
 end
