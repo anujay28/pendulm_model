@@ -33,8 +33,7 @@ exo = data.Nominal.exo.Data;
 
 e = ( exo - ref).^2;
 
-joint_error = sum(e,3)/length(e);
-
-vals = sum(sqrt(joint_error));
+e_exo = ( exo - ref).^2;
+vals = sqrt( sum(sum(e_exo,3)) / length(e_exo));
 
 end
