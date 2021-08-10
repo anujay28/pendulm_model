@@ -51,6 +51,6 @@ vel_error = sqrt(sum(sum(e_vel,3)) / length(e_vel));
 
 
 
-vals =  exo_error + human_error;% vel_error; %human_error +
+vals =  exo_error + vel_error; %human_error +
 
 end
