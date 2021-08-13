@@ -18,22 +18,20 @@ myR = diag([0.001 0.001 0.00 0.00]);
 
 
 % connection dyamics
-spring = [100, 0; 0, 100];
-dampener = [100, 0; 0, 100];
+spring = [2000, 0; 0, 2000];
+dampener = [1000, 0; 0, 1000];
 
+% spring = [100, 0; 0, 100];
+% dampener = [100, 0; 0, 100];
 
-% model 1 gains
-Km1 = [30, 0; 0 30];
-Dm1 = [30,0;0,30];
-
+Dm1 = [496.569821348200,0;0,100];
+Km1 = [6017.73151361233,0;0,2898.16820260871];
 
 
 % Addmittance Controller
 Kd = [50,0;0, 50];
 Bd = [50,0;0, 50];
 Md = [10.0, 0; 0, 10.0];
-
-
 
 
 %Works well with the lower masses
