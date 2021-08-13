@@ -31,8 +31,8 @@ xd2_vel = squeeze(vel_cost_state_space.xd(2,:,:)) % reshape magic
 
 
 
-x2_un = squeeze(untunned_state_space.x(1,:,:)) % reshape magic
-xd2_un = squeeze(untunned_state_space.xd(1,:,:)) % reshape magic
+x2_un = squeeze(untunned_state_space.x(2,:,:)) % reshape magic
+xd2_un = squeeze(untunned_state_space.xd(2,:,:)) % reshape magic
 
 
 subplot(2,1,1);
