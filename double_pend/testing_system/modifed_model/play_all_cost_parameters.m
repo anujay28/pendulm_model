@@ -48,7 +48,7 @@ Md = [10.0, 0; 0, 10.0];
 lambda2 = params.all_cost_parameters(9,1).Value;
 rho2 = params.all_cost_parameters(8,1).Value;
 exo_sat = 150;
-human_sat = 150;
+human_sat = 30;
 beta = params.all_cost_parameters(6,1).Value;
 
 
