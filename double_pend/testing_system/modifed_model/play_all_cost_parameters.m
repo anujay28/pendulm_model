@@ -9,7 +9,7 @@ me = [ 2.11, 1.28]  + mh;
 
 % other model params
 lh = [0.324, 0.3900]
-le = 1.05*lh;
+le = lh;
 
 
 
@@ -48,7 +48,7 @@ Md = [10.0, 0; 0, 10.0];
 lambda2 = params.all_cost_parameters(9,1).Value;
 rho2 = params.all_cost_parameters(8,1).Value;
 exo_sat = 150;
-human_sat = 30;
+human_sat = 0.0;
 beta = params.all_cost_parameters(6,1).Value;
 
 
