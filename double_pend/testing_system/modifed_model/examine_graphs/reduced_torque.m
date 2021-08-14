@@ -102,3 +102,12 @@ legend("ref","assistie","assistor");
 title('Joint 2');
 xlabel('$Gait \%$','interpreter','latex','FontSize',20);
 ylabel('$\theta (deg)$','interpreter','latex', 'rotation',0, 'FontSize',20);
+
+
+
+
+error_human_joint1 = sqrt(sum((rad2deg(ref1) - rad2deg(human_joint_traj1)).^2 )/length(human_joint_traj1))
+error_human_joint2 = sqrt(sum((rad2deg(ref2) - rad2deg(human_joint_traj2)).^2 )/length(human_joint_traj2))
+
+error_exo_joint1 = sqrt(sum((rad2deg(ref1) - rad2deg(exo_joint_traj1)).^2 )/length(exo_joint_traj1))
+error_exo_joint2 = sqrt(sum((rad2deg(ref2) - rad2deg(exo_joint_traj2)).^2 )/length(exo_joint_traj2))
