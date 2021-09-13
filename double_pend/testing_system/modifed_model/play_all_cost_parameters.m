@@ -27,9 +27,6 @@ Dm1 = [496.569821348200,0;0,100];
 Km1 = [6017.73151361233,0;0,2898.16820260871];
 
 
-
-
-
 % model 1 gains
 % Km1 = [300, 0; 0 300];
 % Dm1 = [300,0;0,300];
@@ -48,7 +45,7 @@ Md = [10.0, 0; 0, 10.0];
 lambda2 = params.all_cost_parameters(9,1).Value;
 rho2 = params.all_cost_parameters(8,1).Value;
 exo_sat = 150;
-human_sat = 0.0;
+human_sat = 150.0;
 beta = params.all_cost_parameters(6,1).Value;
 
 

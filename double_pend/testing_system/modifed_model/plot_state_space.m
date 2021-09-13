@@ -54,7 +54,7 @@ plot(x2_pos, xd2_pos,'LineWidth',linewidth);
 plot(x2_vel, xd2_vel,'LineWidth',linewidth);
 plot(x2_un, xd2_un,'LineWidth',linewidth);
 title('Joint 2')
-xlabel('$X$','interpreter','latex','FontSize',20)
-ylabel('$\dot{X}$','interpreter','latex', 'rotation',0, 'FontSize',20)
+xlabel('$X$','interpreter','latex','FontSize', 30)
+ylabel('$\dot{X}$','interpreter','latex', 'rotation', 0, 'FontSize',30)
 legend('pos+vel cost','pos cost', 'vel cost', "untunned")
 
